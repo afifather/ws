@@ -10,10 +10,10 @@ if "visibility" not in st.session_state:
     st.session_state.visibility = "visible"
     st.session_state.disabled = False
 
-ticker_input = st.text_input('Enter a ticker symbol:', '')  
+ticker_input = st.text_input('Enter a ticker symbol:', '').upper() 
 ticker_input_upper = ticker_input.upper()  
 df = pd.DataFrame(columns=["TICKER", "WEIGHT"])
-new_row = pd.DataFrame({'TICKER': [ticker_input_upper], 'WEIGHT': [1]})
+new_row = pd.DataFrame({'TICKER': [ticker_input], 'WEIGHT': [1]})
 df = pd.concat([df, new_row], ignore_index=True)
 df.rename(columns={"Column1": "TICKER", "NewColumn": "WEIGHT"}, inplace=True)
 today_date = datetime.now().strftime('%Y-%m-%d')
