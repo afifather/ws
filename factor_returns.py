@@ -49,7 +49,7 @@ def enhanced_interactive_plot(df):
     st.plotly_chart(fig)
 
 
-st.title("Enhanced Interactive Time Series Plot")
+st.title("Factor Returns")
 
 
 try:
