@@ -11,7 +11,7 @@ def enhanced_interactive_plot(df):
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=df['Date'], y=df[initial_column], mode='lines+markers', name=initial_column))
     fig.update_layout(
-        title='Enhanced Interactive Time Series Plot',
+        title='Factor Returns',
         xaxis_title='Date',
         yaxis_title='Value',
         template='plotly_white',
