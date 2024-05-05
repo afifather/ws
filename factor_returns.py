@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 
-CSV_PATH = 'CSV_URL = 'https://raw.githubusercontent.com/afifather/ws/main/output.csv'
+CSV_PATH = 'https://raw.githubusercontent.com/afifather/ws/main/output.csv'
 
 
 def enhanced_interactive_plot(df):
